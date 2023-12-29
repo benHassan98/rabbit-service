@@ -9,8 +9,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ USERNAME }}
-          password: ${{ PAT }}
+          username: benHassan98
+          password: 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
       - name: Build the rabbit Docker image
         run: |
               docker build -t ghcr.io/benhassan98/rabbit:latest .
